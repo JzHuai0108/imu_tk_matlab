@@ -1,7 +1,8 @@
-function [ R ] = rotationRK4( omega )
-
-% delta t
-dt = 0.01;
+% Huai { the input dt, namely, sampling interval, is essential for quaternion integration. To be
+% accurate, it is advisable to put timestamp for every observation. But for
+% MEMS IMU, their timestamp really have a consecutive difference of dt as
+% their clcok is not so nice. 
+function [ R ] = rotationRK4( omega, dt)
 
 omega_x = omega(1,:);
 omega_y = omega(2,:);
@@ -9,8 +10,8 @@ omega_z = omega(3,:);
 
 num_samples = length(omega_x);
 
-q_k = fromOmegaToQ([omega_x(1); omega_y(1); omega_z(1)], [0.01])';
-q_next_k = [0; 0; 0; 0];
+q_k = fromOmegaToQ([omega_x(1); omega_y(1); omega_z(1)], [dt])';
+q_next_k = q_k; % was [0; 0; 0; 0]; changed by Huai
 
 for i = 1:num_samples - 1
     

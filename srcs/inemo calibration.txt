@@ -1,0 +1,78 @@
+
+Local minimum possible.
+
+lsqnonlin stopped because the final change in the sum of squares relative to 
+its initial value is less than the selected value of the function tolerance.
+
+<stopping criteria details>
+
+         0.090827738978113
+        0.0600149039251388
+         0.834788648002395
+
+       0.00964929436000702                         0                         0
+                         0       0.00971560433303835                         0
+                         0                         0       0.00950177420049073
+
+                         1        0.0392840650199062       -0.0030011326791253
+                         0                         1       0.00574180807477407
+                         0                         0                         1
+
+         0.042991269971998          3.18876626585406          3.93147751605996
+
+
+Local minimum possible.
+
+lsqnonlin stopped because the final change in the sum of squares relative to 
+its initial value is less than the selected value of the function tolerance.
+
+<stopping criteria details>
+
+        0.0169168571737101                         0                         0
+                         0        0.0172774929349165                         0
+                         0                         0        0.0178150273107602
+
+                         1        0.0363319949565974       0.00388159283959375
+       -0.0138774985314868                         1       0.00624283960012139
+        0.0115541959648562      -0.00839184699522386                         1
+
+Accelerometer's Scaling Matrix taken from datasheet:
+          102.040816326531                         0                         0
+                         0          102.040816326531                         0
+                         0                         0          102.040816326531
+
+Accelerometer's Misalignment Matrix taken from datasheet:
+          1.00             0             0
+             0          1.00             0
+             0             0          1.00
+
+Gyroscope's Scaling Matrix taken from datasheet:
+   57.2958         0         0
+         0   57.2958         0
+         0         0   57.2958
+
+Gyroscope's Misalignment Matrix taken from datasheet:
+          1.00             0             0
+             0          1.00             0
+             0             0          1.00
+
+-----------------------------------------------------------------
+Accelerometer's Estimated Scaling Matrix:
+  103.6345         0         0
+         0  102.9272         0
+         0         0  105.2435
+
+Accelerometer's Estimated Misalignment Matrix:
+    0.9994   -0.0492   -0.0164
+    0.0097    0.9998   -0.0157
+    0.0201    0.0098    0.9998
+
+Gyroscope's Estimated Scaling Matrix:
+   59.1126         0         0
+         0   57.8788         0
+         0         0   56.1324
+
+Gyroscope's Estimated Misalignment Matrix:
+    0.9989   -0.0464   -0.0233
+    0.0236    0.9991   -0.0166
+    0.0088    0.0187    0.9999
